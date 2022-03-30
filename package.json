@@ -1,0 +1,35 @@
+{
+  "name": "tmp-log-compare",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Used to compare differnt logging libraries",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix",
+    "start": "node ./dist/index.js",
+    "start:dev": "nodemon ./src/index.ts"
+  },
+  "author": "Ognjen Bostjancic",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "pino-pretty": "^7.6.0",
+    "prettier": "^2.6.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "anylogger": "^1.0.11",
+    "loglevel": "^1.8.0",
+    "loglevel-plugin-prefix": "^0.8.4",
+    "pino": "^7.9.2",
+    "ulog": "^2.0.0-beta.19",
+    "winston": "^3.6.0"
+  }
+}
